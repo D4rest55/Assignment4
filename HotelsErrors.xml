@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Hotels.xsd">
+	<Hotel Rating="4.2">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address NearstAirport="Sky Harbor">
+			<Number>11</Number>
+			<Street>E. 7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.5">
+		<Name>Salt Lake Grand</Name>
+		<Phone>801-555-7890</Phone>
+		<Address NearstAirport="Salt Lake City">
+			<Number>250</Number>
+			<Street>North Temple</Street>
+			<City>Salt Lake City</City>
+			<State>UT</State>
+			<Zip>84116</Zip>
+		<!--Does not close here first error-->
+	</Hotel>
+	<Hotel Rating="4.3">
+		<Name>Marriott</Name>
+		<!--No number here-->
+		<Address NearstAirport="John F. Kennedy">
+			<Number>200</Number>
+			<Street>Broadway</Street>
+			<City>New York</City>
+			<State>NY</State>
+			<Zip>10007</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="3.8">
+		<Name>Hyatt</Name>
+		<Phone>312-555-5678</Phone>
+		<Address NearstAirport="Chicago O'Hare">
+			<Number>300</Number>
+			<Street>Michigan Ave</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60601</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.5">
+		<Name>The Peninsula</Name>
+		<Phone>617-555-4321</Phone>
+		<Address NearstAirport="Logan">
+			<Number>100</Number>
+			<Street>Boylston St</Street>
+			<City>Boston</City>
+			<State>MA</State>
+			<Zip>02116</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.0">
+		<Name>Best Western Plus Mesa</Name>
+		<Phone>480-555-2345</Phone>
+		<Address> <!--Required is gone-->
+			<Number>1500</Number>
+			<Street>East Main St</Street>
+			<City>Mesa</City>
+			<State>AZ</State>
+			<Zip>85203</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.7">
+		<Name>St. Regis</Name>
+		<Phone>305-555-9876</Phone>
+		<Address NearstAirport="Miami">
+			<Number>1250</Number>
+			<Street>Brickell Bay Dr</Street>
+			<City>Miami</City>
+			<State>FL</State>
+			<Zip>33131</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.2">
+		<Name>Grand Hyatt San Diego</Name>
+		<Phone>619-555-7890</Phone>
+		<Address NearstAirport="San Diego">
+			<Number>1</Number>
+			<Street>Market Place</Street>
+			<City>San Diego</City>
+			<State>CA</State>
+			<Zip>92101</Zip>
+		</Address>
+	</Hotel>
+	<Hotel Rating="4.3">
+		<Name>Dallas Marriott</Name>
+		<Name>Two Names</Name> <!--Has two names-->
+		<Phone>214-555-6789</Phone>
+		<Address NearstAirport="Dallas Fort Worth">
+			<Number>1000</Number>
+			<Street>Harwood St</Street>
+			<City>Dallas</City>
+			<State>TX</State>
+			<Zip>75201</Zip>
+		</Address>
+	</Hotel>
+	<Hotel>
+		<Name>Omni Tempe</Name>
+		<Phone>480-555-1234</Phone>
+		<Address NearstAirport="Phoenix Sky Harbor">
+			<Number>800</Number>
+			<Street>South Ash Ave</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+</Hotel> <!--Hotel and not Hotels-->

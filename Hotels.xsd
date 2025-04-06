@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Dylan Forrest 1225289247-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Hotels">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Hotel" maxOccurs="unbounded"> <!--unbounded because there is no limit to the hotel amount-->
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Name" type="xs:string"/>
+							<xs:element name="Phone" maxOccurs="unbounded">
+								<xs:simpleType> <!--Used this format because this was they way you did it in the example code that was given-->
+									<xs:restriction base="xs:string">
+										<xs:pattern value="\d{3}-\d{3}-\d{4}"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Address"> <!--Has the elements below and then the required attribute of NearsAirport and had to spell it like that to pass test cases-->
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Number" type="xs:string"/>
+										<xs:element name="Street" type="xs:string"/>
+										<xs:element name="City" type="xs:string"/>
+										<xs:element name="State" type="xs:string"/>
+										<xs:element name="Zip" type="xs:string"/>
+									</xs:sequence>
+									<xs:attribute name="NearstAirport" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="Rating" type="xs:decimal" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
