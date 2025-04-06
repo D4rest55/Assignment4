@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--Dylan Forrest 1225289247-->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="https://github.com/d4rest55/Assignment4/raw/main/Hotels.xml" targetNamespace="https://github.com/d4rest55/Assignment4/raw/main/Hotels.xml" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--Added the targetNamespace to pass the content test 2-->
 	<xs:element name="Hotels">
 		<xs:complexType>
 			<xs:sequence>
